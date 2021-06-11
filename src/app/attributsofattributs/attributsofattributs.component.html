@@ -1,0 +1,25 @@
+
+<form (ngSubmit)="insertattribut()"  >
+    <input type="text" name="name"  class="form-control" placeholder=" Enter name " aria-describedby="helpId"  [(ngModel)]="attribut.name"/>
+
+    <button mat-button class="button">Submit</button>
+    </form>
+<table class="table" >
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+          
+           
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let attribut of attributs">
+  <td scope="row">{{ attribut.id }}</td>
+        <td scope="row"> {{ attribut.name }}</td>
+   
+            
+    </tr>
+    </tbody>
+</table>
+

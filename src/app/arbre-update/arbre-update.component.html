@@ -1,0 +1,22 @@
+<h1 >
+  Update arbre
+</h1>
+<div class="main-div">
+<mat-card class="example-card">
+  <mat-card-header>
+   
+  </mat-card-header>
+  <mat-card-content>
+<form (ngSubmit)="updatearbre()"  >
+  <mat-form-field class="input" >
+    <mat-label>Name</mat-label>
+  <input type="text" name="name"  matInput  [(ngModel)]="arbre.name" >
+</mat-form-field>
+<div style="position: relative; text-align: center; left: 3%;">
+    <button mat-button class="button" >Submit</button>
+  </div>
+    </form>
+    <button mat-button  routerLink="/arbres"><mat-icon style="color: blue;">navigate_before</mat-icon></button>
+  </mat-card-content>
+  </mat-card>
+</div>

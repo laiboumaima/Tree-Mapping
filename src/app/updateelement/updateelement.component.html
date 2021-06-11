@@ -1,0 +1,21 @@
+<h1 >
+  Update Element
+</h1>
+<div class="main-div">
+<mat-card class="example-card">
+  <mat-card-header>
+   
+  </mat-card-header>
+  <mat-card-content>
+<form (ngSubmit)="updateArbredataelement()"  >
+  <mat-form-field class="input" >
+    <mat-label>Name</mat-label>
+      <input type="text" name="name"  matInput  aria-describedby="helpId"  [(ngModel)]="element.name">
+    </mat-form-field>
+    <div style="position: relative; text-align: center; ">
+      <button mat-button class="button" >Submit</button>
+    </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>

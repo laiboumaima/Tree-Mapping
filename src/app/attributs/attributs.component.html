@@ -1,0 +1,33 @@
+<form (ngSubmit)="insertattribut()"  >
+  
+      <input type="text" name="name"  class="form-control" placeholder=" Enter name " aria-describedby="helpId"  [(ngModel)]="attribut.name">
+    
+   
+    <button mat-button class="button">Submit</button>
+    </form>
+<table class="table" >
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">Action</th>
+            <th scope="col">Attributs</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let attribut of attributs">
+        <td scope="row"> {{ attribut.id }}</td>
+        <td scope="row"> {{ attribut.name }}</td>
+        <td><button  mat-icon-button  color="warn" (click)= "delete(attribut.id)"  ><mat-icon>delete_outline</mat-icon></button>
+         <button  mat-icon-button   routerLink="{{attribut.id}}/edit" ><mat-icon>edit</mat-icon></button>
+        </td>
+            <td>
+            <button class="btn" routerLink="{{attribut.id}}/attributs" >attributs</button></td>
+        
+ 
+        
+    </tr>
+    </tbody>
+</table>
+

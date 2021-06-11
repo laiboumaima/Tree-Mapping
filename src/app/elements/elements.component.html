@@ -1,0 +1,38 @@
+
+    
+<form (ngSubmit)="insertarbreelement()"  >
+
+
+      
+      <input type="text" name="name"  class="form-control" placeholder=" Enter name " aria-describedby="helpId"  [(ngModel)]="element.name"/>
+
+   
+    <button mat-button class="button">Submit</button>
+    
+    </form>
+
+  
+<table class="table" >
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">Action</th>
+            <th scope="col">Attributs</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor = "let element of elements">
+  <td scope="row">{{ element.id }}</td>
+        <td scope="row"> {{ element.name }}</td>
+       <td><button  mat-icon-button  color="warn" (click)= "deleteelement(element.id)"  ><mat-icon>delete_outline</mat-icon></button>
+        <button class="btn " routerLink="{{element.id}}/edit" ><mat-icon>edit</mat-icon></button></td>
+        
+
+        <td><button class="btn " style="color: black;" routerLink="{{element.id}}/attributs" >Attributs</button>
+    </td>
+            
+    </tr>
+    </tbody>
+</table>

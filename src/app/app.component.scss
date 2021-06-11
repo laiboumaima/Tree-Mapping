@@ -1,0 +1,48 @@
+$myColor: #001652;
+.nav{
+    position: fixed;
+    background-color:  $myColor;
+    color: #C8C9F8;
+  }
+.spacer{
+    flex: 1 1 auto ;
+
+  }
+  .nav 
+  a:hover {
+    color: white;
+    text-decoration: none;
+
+}
+.active {
+    color: white;
+    text-decoration: none;
+
+}
+.spacecon{
+    flex: 1 1 1 1 ;
+}
+
+.main-div{
+  margin-top: 0%;
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+  text-align: center;
+}
+.example-card{
+  margin-top: 0%;
+}
+.button{
+  color: white;
+  margin: 4% 2%;
+  background-color: #001652;
+}
+.button:hover{
+  color:  #001652;
+  margin: 4% 2%;
+  background-color: white;
+}

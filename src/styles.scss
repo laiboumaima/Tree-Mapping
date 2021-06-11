@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.hide{
+    display: none;
+}
+.search-div{
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+ .search-form-field{
+    width: 50%;
+    padding: 2px;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 5px;
+     }
+     .search-form-field div .mat-form-field-undeline{
+         display: none;
+     }
+     .search-form-field div .mat-form-field-infix{
+        border-top: 0ch;
+    }
+    .search-form-field div .mat-form-field-warpper{
+        padding-bottom: 0%;
+    }
+    
+   .search-form-field div .mat-form-field-suggix button{
+       height: 5%;
+       width: 5%;
+   }
+  
